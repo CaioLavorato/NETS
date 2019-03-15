@@ -156,7 +156,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Swis721 Blk BT" size="36" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Mercadinho NETS"/>
+                <Property name="text" type="java.lang.String" value="PetShop NETS"/>
               </Properties>
             </Component>
           </SubComponents>

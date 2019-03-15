@@ -15,12 +15,12 @@ import model.dao.ProdutoDAO;
  *
  * @author NETS
  */
-public class TelaMercadinho extends javax.swing.JFrame {
+public class TelaPetShop extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaMercadinho
      */
-    public TelaMercadinho() {
+    public TelaPetShop() {
         initComponents();
         DefaultTableModel modelo = (DefaultTableModel) tbl_produtos.getModel();
         tbl_produtos.setRowSorter(new TableRowSorter(modelo));
@@ -106,7 +106,7 @@ public class TelaMercadinho extends javax.swing.JFrame {
         lbl_icone.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/NETSF.png"))); // NOI18N
 
         lbl_titulo.setFont(new java.awt.Font("Swis721 Blk BT", 1, 36)); // NOI18N
-        lbl_titulo.setText("Mercadinho NETS");
+        lbl_titulo.setText("PetShop NETS");
 
         javax.swing.GroupLayout pnl_tituloLayout = new javax.swing.GroupLayout(pnl_titulo);
         pnl_titulo.setLayout(pnl_tituloLayout);
@@ -560,7 +560,7 @@ public class TelaMercadinho extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaMercadinho().setVisible(true);
+                new TelaPetShop().setVisible(true);
             }
         });
     }
