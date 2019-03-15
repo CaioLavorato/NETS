@@ -18,6 +18,8 @@ public class Produto {
     private int quantidade;
     private int id;
     private boolean flagProduto;
+    private String categoria;
+    private String dataCadastro;
 
     public String getNome() {
         return nome;
@@ -75,12 +77,22 @@ public class Produto {
     public int getId() {
         return id;
     }
-        public String getCategoria() {
-        return nome;
+
+    public String getCategoria() {
+        return categoria;
+    }
+        public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
-    public void setCategoria(String nome) {
-        this.nome = nome;
+    public void setData (String dataCadastro) {
+        this.dataCadastro = dataCadastro;
     }
+
+    public String getData() {
+        return dataCadastro;
+    }
+
+
 
 }

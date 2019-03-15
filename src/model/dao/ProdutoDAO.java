@@ -3,9 +3,11 @@ package model.dao;
 import connection.ConnectionDB;
 import java.awt.List;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -24,7 +26,7 @@ public class ProdutoDAO {
         PreparedStatement stmt = null;
 
         try {
-            stmt = con.prepareStatement("INSERT INTO produto (NOME,DESCRICAO,PRECO_COMPRA,PRECO_VENDA,QUANTIDADE,DISPONIVEL)VALUES(?,?,?,?,?,?)");
+            stmt = con.prepareStatement("INSERT INTO produto (NOME,DESCRICAO,PRECO_COMPRA,PRECO_VENDA,QUANTIDADE,DISPONIVEL,DT_CADASTRO)VALUES(?,?,?,?,?,?,?)");
 
             stmt.setString(1, p.getNome());
             stmt.setString(2, p.getDescricao());
@@ -32,6 +34,7 @@ public class ProdutoDAO {
             stmt.setDouble(4, p.getPrecoVenda());
             stmt.setInt(5, p.getQuantidade());
             stmt.setBoolean(6, p.isFlagProduto());
+            stmt.setDate(7, Date.valueOf(LocalDate.now()));
 
             stmt.executeUpdate();
 
@@ -69,6 +72,7 @@ public class ProdutoDAO {
                 produto.setPrecoVenda(rs.getDouble("PRECO_VENDA"));
                 produto.setQuantidade(rs.getInt("QUANTIDADE"));
                 produto.setFlagProduto(rs.getBoolean("DISPONIVEL"));
+                produto.setData(rs.getString("DT_CADASTRO"));
 
                 produtos.add(produto);
             }
@@ -87,7 +91,7 @@ public class ProdutoDAO {
         PreparedStatement stmt = null;
 
         try {
-            stmt = con.prepareStatement("UPDATE produto SET NOME = ?, DESCRICAO = ?, PRECO_COMPRA = ?, PRECO_VENDA = ?, QUANTIDADE = ?, DISPONIVEL = ? WHERE id = ?");
+            stmt = con.prepareStatement("UPDATE produto SET NOME = ?, DESCRICAO = ?, PRECO_COMPRA = ?, PRECO_VENDA = ?, QUANTIDADE = ?, DISPONIVEL = ?,DT_CADASTRO = ? WHERE id = ?");
 
             stmt.setString(1, p.getNome());
             stmt.setString(2, p.getDescricao());
@@ -95,7 +99,8 @@ public class ProdutoDAO {
             stmt.setDouble(4, p.getPrecoVenda());
             stmt.setInt(5, p.getQuantidade());
             stmt.setBoolean(6, p.isFlagProduto());
-            stmt.setInt(7, p.getId());
+            stmt.setDate(7, Date.valueOf(LocalDate.now()));
+            stmt.setInt(8, p.getId());
 
             stmt.executeUpdate();
 
