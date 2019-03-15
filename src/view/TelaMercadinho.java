@@ -224,7 +224,7 @@ public class TelaMercadinho extends javax.swing.JFrame {
             }
         });
 
-        lbl_categoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        lbl_categoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<Selecione uma Categoria>", "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, tbl_produtos, org.jdesktop.beansbinding.ELProperty.create("${}"), lbl_categoria, org.jdesktop.beansbinding.BeanProperty.create("selectedItem"));
         bindingGroup.addBinding(binding);
@@ -284,7 +284,7 @@ public class TelaMercadinho extends javax.swing.JFrame {
                             .addGroup(pnl_cadastroProdutoLayout.createSequentialGroup()
                                 .addGap(69, 69, 69)
                                 .addComponent(lbl_cadastroProduto))
-                            .addComponent(lbl_categoria, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lbl_categoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         pnl_cadastroProdutoLayout.setVerticalGroup(
@@ -367,6 +367,10 @@ public class TelaMercadinho extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(tbl_produtos);
         if (tbl_produtos.getColumnModel().getColumnCount() > 0) {
+            tbl_produtos.getColumnModel().getColumn(0).setPreferredWidth(10);
+            tbl_produtos.getColumnModel().getColumn(3).setPreferredWidth(90);
+            tbl_produtos.getColumnModel().getColumn(4).setPreferredWidth(80);
+            tbl_produtos.getColumnModel().getColumn(5).setPreferredWidth(50);
             tbl_produtos.getColumnModel().getColumn(7).setResizable(false);
         }
 

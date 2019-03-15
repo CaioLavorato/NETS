@@ -75,5 +75,12 @@ public class Produto {
     public int getId() {
         return id;
     }
+        public String getCategoria() {
+        return nome;
+    }
+
+    public void setCategoria(String nome) {
+        this.nome = nome;
+    }
 
 }

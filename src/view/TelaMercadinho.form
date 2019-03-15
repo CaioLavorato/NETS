@@ -234,7 +234,7 @@
                                       <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                                       <Component id="lbl_cadastroProduto" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="lbl_categoria" alignment="0" min="-2" pref="181" max="-2" attributes="0"/>
+                                  <Component id="lbl_categoria" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
@@ -471,11 +471,12 @@
             <Component class="javax.swing.JComboBox" name="lbl_categoria">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="4">
-                    <StringItem index="0" value="Item 1"/>
-                    <StringItem index="1" value="Item 2"/>
-                    <StringItem index="2" value="Item 3"/>
-                    <StringItem index="3" value="Item 4"/>
+                  <StringArray count="5">
+                    <StringItem index="0" value="&lt;Selecione uma Categoria&gt;"/>
+                    <StringItem index="1" value="Item 1"/>
+                    <StringItem index="2" value="Item 2"/>
+                    <StringItem index="3" value="Item 3"/>
+                    <StringItem index="4" value="Item 4"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -526,7 +527,7 @@
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                   <TableColumnModel selectionModel="0">
-                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="10" resizable="true">
                       <Title/>
                       <Editor/>
                       <Renderer/>
@@ -541,17 +542,17 @@
                       <Editor/>
                       <Renderer/>
                     </Column>
-                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="90" resizable="true">
                       <Title/>
                       <Editor/>
                       <Renderer/>
                     </Column>
-                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="80" resizable="true">
                       <Title/>
                       <Editor/>
                       <Renderer/>
                     </Column>
-                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="50" resizable="true">
                       <Title/>
                       <Editor/>
                       <Renderer/>
