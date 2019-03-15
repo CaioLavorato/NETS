@@ -481,7 +481,7 @@
                 </Property>
               </Properties>
               <BindingProperties>
-                <BindingProperty name="selectedItem" source="tbl_produtos" sourcePath="${}" target="lbl_categoria" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+                <BindingProperty name="selectedItem" source="tbl_produtos" sourcePath="${selectedElement}" target="lbl_categoria" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
               </BindingProperties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lbl_categoriaActionPerformed"/>

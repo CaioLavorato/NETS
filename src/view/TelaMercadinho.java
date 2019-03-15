@@ -45,7 +45,8 @@ public class TelaMercadinho extends javax.swing.JFrame {
                 p.getPrecoCompra(),
                 p.getPrecoVenda(),
                 p.getQuantidade(),
-                p.isFlagProduto(),});
+                p.isFlagProduto(),
+                p.getData()});
 
         }
 
@@ -226,7 +227,7 @@ public class TelaMercadinho extends javax.swing.JFrame {
 
         lbl_categoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<Selecione uma Categoria>", "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, tbl_produtos, org.jdesktop.beansbinding.ELProperty.create("${}"), lbl_categoria, org.jdesktop.beansbinding.BeanProperty.create("selectedItem"));
+        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, tbl_produtos, org.jdesktop.beansbinding.ELProperty.create("${selectedElement}"), lbl_categoria, org.jdesktop.beansbinding.BeanProperty.create("selectedItem"));
         bindingGroup.addBinding(binding);
 
         lbl_categoria.addActionListener(new java.awt.event.ActionListener() {
@@ -555,34 +556,8 @@ public class TelaMercadinho extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_lbl_categoriaActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaMercadinho.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaMercadinho.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaMercadinho.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaMercadinho.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
-        /* Create and display the form */
+    public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new TelaMercadinho().setVisible(true);
