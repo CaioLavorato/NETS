@@ -37,7 +37,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="81" max="32767" attributes="0"/>
               <Component id="pnl_backgroundBlack" min="-2" pref="907" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -182,50 +182,59 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
-                              <Component id="lbl_cadastroProduto" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="lbl_descricao" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lbl_nome" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txf_nome" max="32767" attributes="0"/>
-                                  <Component id="txf_descricao" max="32767" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btn_cadastro" min="-2" pref="119" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="btn_atualizar" min="-2" pref="119" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="btn_excluir" min="-2" pref="119" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="74" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <EmptySpace pref="12" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lbl_precoVenda" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbl_precoCompra" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbl_flagProduto" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbl_quantidade" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="lbl_descricao" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_nome" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_nome1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="txf_quantidade" min="-2" pref="44" max="-2" attributes="0"/>
-                              <EmptySpace min="90" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="txf_descricao" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="btn_cadastro" min="-2" pref="119" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="btn_atualizar" min="-2" pref="119" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="btn_excluir" min="-2" pref="119" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="74" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="txf_nome" alignment="0" min="-2" pref="467" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbl_precoVenda" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbl_precoCompra" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbl_flagProduto" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbl_quantidade" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="txf_quantidade" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace min="90" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txf_precoVenda" min="-2" pref="101" max="-2" attributes="0"/>
+                                          <Component id="txf_precoCompra" min="-2" pref="107" max="-2" attributes="0"/>
+                                          <Component id="chk_flagProduto" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txf_precoVenda" min="-2" pref="101" max="-2" attributes="0"/>
-                                  <Component id="txf_precoCompra" min="-2" pref="107" max="-2" attributes="0"/>
-                                  <Component id="chk_flagProduto" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                                      <Component id="lbl_cadastroProduto" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="lbl_categoria" alignment="0" min="-2" pref="181" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
@@ -236,16 +245,27 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="lbl_cadastroProduto" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lbl_nome" alignment="3" max="32767" attributes="0"/>
-                          <Component id="lbl_precoCompra" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txf_nome" alignment="3" max="32767" attributes="0"/>
-                          <Component id="txf_precoCompra" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="lbl_categoria" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_nome1" alignment="3" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lbl_nome" alignment="3" max="32767" attributes="0"/>
+                                  <Component id="lbl_precoCompra" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txf_precoCompra" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="txf_nome" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="lbl_descricao" min="-2" max="-2" attributes="0"/>
                           <Component id="txf_descricao" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
@@ -256,12 +276,12 @@
                               </Group>
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txf_precoVenda" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="txf_precoVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="lbl_precoVenda" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txf_quantidade" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                                  <Component id="txf_quantidade" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="lbl_quantidade" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -324,6 +344,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial" size="16" style="0"/>
                 </Property>
+                <Property name="horizontalAlignment" type="int" value="2"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txf_descricaoActionPerformed"/>
@@ -447,6 +468,35 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chk_flagProdutoActionPerformed"/>
               </Events>
             </Component>
+            <Component class="javax.swing.JComboBox" name="lbl_categoria">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="4">
+                    <StringItem index="0" value="Item 1"/>
+                    <StringItem index="1" value="Item 2"/>
+                    <StringItem index="2" value="Item 3"/>
+                    <StringItem index="3" value="Item 4"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="selectedItem" source="tbl_produtos" sourcePath="${}" target="lbl_categoria" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lbl_categoriaActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbl_nome1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Swis721 BlkEx BT" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Categoria:"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JScrollPane" name="jScrollPane2">
@@ -462,7 +512,7 @@
                   <Font name="Tahoma" size="16" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="8" rowCount="0">
+                  <Table columnCount="9" rowCount="0">
                     <Column editable="false" title="ID" type="java.lang.Integer"/>
                     <Column editable="false" title="Nome" type="java.lang.Object"/>
                     <Column editable="false" title="Descri&#xe7;&#xe3;o" type="java.lang.Object"/>
@@ -471,6 +521,7 @@
                     <Column editable="false" title="Quantidade" type="java.lang.Object"/>
                     <Column editable="false" title="Flag do Produto" type="java.lang.Object"/>
                     <Column editable="false" title="Data da inclus&#xe3;o" type="java.lang.Object"/>
+                    <Column editable="false" title="Categoria" type="java.lang.Object"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -511,6 +562,11 @@
                       <Renderer/>
                     </Column>
                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                       <Title/>
                       <Editor/>
                       <Renderer/>
